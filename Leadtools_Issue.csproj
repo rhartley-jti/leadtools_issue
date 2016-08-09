@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{258513EE-3D82-44AB-A46A-820DF7E92E8C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Leadtools_Issue</RootNamespace>
+    <AssemblyName>Leadtools_Issue</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Leadtools, Version=17.5.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Leadtools\Leadtools.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Annotations, Version=17.5.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Leadtools\Leadtools.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs, Version=17.5.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Leadtools\Leadtools.Codecs.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Bmp, Version=17.5.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Leadtools\Leadtools.Codecs.Bmp.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Cmp, Version=17.5.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Leadtools\Leadtools.Codecs.Cmp.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Fax, Version=17.5.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Leadtools\Leadtools.Codecs.Fax.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Gif, Version=17.5.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Leadtools\Leadtools.Codecs.Gif.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Jb2, Version=17.5.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Leadtools\Leadtools.Codecs.Jb2.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Jbg, Version=17.5.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Leadtools\Leadtools.Codecs.Jbg.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Png, Version=17.5.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Leadtools\Leadtools.Codecs.Png.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Raw, Version=17.5.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Leadtools\Leadtools.Codecs.Raw.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Tif, Version=17.5.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Leadtools\Leadtools.Codecs.Tif.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.ColorConversion, Version=17.5.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Leadtools\Leadtools.ColorConversion.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Drawing, Version=17.5.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Leadtools\Leadtools.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Kernel.Annotations, Version=17.5.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Leadtools\Leadtools.Kernel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Pdf, Version=17.5.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Leadtools\Leadtools.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Windows.Annotations, Version=17.5.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Leadtools\Leadtools.Windows.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Windows.Controls, Version=17.5.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Leadtools\Leadtools.Windows.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Windows.Media, Version=17.5.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Leadtools\Leadtools.Windows.Media.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Windows.Media.TransitionBase, Version=17.5.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Leadtools\Leadtools.Windows.Media.TransitionBase.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="AnnotatedCanvas.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="License\LEADTOOLS.LIC.KEY" />
+    <EmbeddedResource Include="License\LEADTOOLS.LIC" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Leadtools\Leadtools.Annotations.dll" />
+    <Content Include="Leadtools\Leadtools.Barcode.dll" />
+    <Content Include="Leadtools\Leadtools.Barcode.OneD.dll" />
+    <Content Include="Leadtools\Leadtools.Codecs.Bmp.dll" />
+    <Content Include="Leadtools\Leadtools.Codecs.Cmp.dll" />
+    <Content Include="Leadtools\Leadtools.Codecs.dll" />
+    <Content Include="Leadtools\Leadtools.Codecs.Fax.dll" />
+    <Content Include="Leadtools\Leadtools.Codecs.Gif.dll" />
+    <Content Include="Leadtools\Leadtools.Codecs.Jb2.dll" />
+    <Content Include="Leadtools\Leadtools.Codecs.Jbg.dll" />
+    <Content Include="Leadtools\Leadtools.Codecs.Png.dll" />
+    <Content Include="Leadtools\Leadtools.Codecs.Raw.dll" />
+    <Content Include="Leadtools\Leadtools.Codecs.Tif.dll" />
+    <Content Include="Leadtools\Leadtools.ColorConversion.dll" />
+    <Content Include="Leadtools\Leadtools.dll" />
+    <Content Include="Leadtools\Leadtools.Drawing.dll" />
+    <Content Include="Leadtools\Leadtools.Forms.dll" />
+    <Content Include="Leadtools\Leadtools.Forms.DocumentWriters.dll" />
+    <Content Include="Leadtools\Leadtools.Forms.Ocr.dll" />
+    <Content Include="Leadtools\Leadtools.Forms.Ocr.Plus.dll" />
+    <Content Include="Leadtools\Leadtools.ImageProcessing.Color.dll" />
+    <Content Include="Leadtools\Leadtools.ImageProcessing.Core.dll" />
+    <Content Include="Leadtools\Leadtools.ImageProcessing.Effects.dll" />
+    <Content Include="Leadtools\Leadtools.ImageProcessing.SpecialEffects.dll" />
+    <Content Include="Leadtools\Leadtools.ImageProcessing.Utilities.dll" />
+    <Content Include="Leadtools\Leadtools.Kernel.Annotations.dll" />
+    <Content Include="Leadtools\Leadtools.Mrc.dll" />
+    <Content Include="Leadtools\Leadtools.Pdf.dll" />
+    <Content Include="Leadtools\Leadtools.PdfCompressor.dll" />
+    <Content Include="Leadtools\Leadtools.PdfEngine.dll" />
+    <Content Include="Leadtools\Leadtools.Twain.dll" />
+    <Content Include="Leadtools\Leadtools.Wia.dll" />
+    <Content Include="Leadtools\Leadtools.Windows.Annotations.dll" />
+    <Content Include="Leadtools\Leadtools.Windows.Controls.dll" />
+    <Content Include="Leadtools\Leadtools.Windows.Media.dll" />
+    <Content Include="Leadtools\Leadtools.Windows.Media.TransitionBase.dll" />
+    <Content Include="Leadtools\Leadtools.WinForms.CommonDialogs.File.dll" />
+    <Content Include="Leadtools\Leadtools.WinForms.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
