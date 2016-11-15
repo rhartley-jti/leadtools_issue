@@ -1,12 +1,11 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Windows;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using Leadtools;
 using Leadtools.Codecs;
-using Leadtools.Windows.Media;
-using Microsoft.Win32;
+using Leadtools.Forms.DocumentWriters;
+using Leadtools.Forms.Ocr;
 
 namespace Leadtools_Issue
 {
@@ -30,25 +29,6 @@ namespace Leadtools_Issue
 				}
 			}
 			InitializeComponent();
-		}
-
-		private void Window_Loaded(object sender, EventArgs e)
-		{
-			string filename = null;
-			OpenFileDialog fileDialog = new OpenFileDialog { Title = "Select image or pdf to work with" };
-			bool? result = fileDialog.ShowDialog(this);
-			if (result == true)
-			{
-				filename = fileDialog.FileName;
-			}
-			RasterImage image = LoadImage(filename);
-			ImageSource rimc = RasterImageConverter.ConvertToSource(image, ConvertToSourceOptions.AutoDetectAlpha | ConvertToSourceOptions.KeepAlphaValues);
-			TransformedBitmap transformedBitmap = rimc as TransformedBitmap;
-			transformedBitmap?.Source.Freeze();
-			rimc.Freeze();
-			mainImg.Source = rimc;
-			AnnotatedCanvas.Height = rimc.Height;
-			AnnotatedCanvas.Width = rimc.Width;
 		}
 
 		private static RasterImage LoadImage(string filename)
@@ -75,6 +55,7 @@ namespace Leadtools_Issue
 			codecs.Options.Pdf.Save.PrintDocument = true;
 			codecs.Options.Pdf.Save.PrintFaithful = true;
 			codecs.Options.Pdf.Save.AssembleDocument = true;
+			codecs.Options.Load.AllPages = true;
 			codecs.Options.Load.Rotated = true;
 			codecs.Options.Load.Compressed = true;
 			codecs.Options.Load.LoadCorrupted = true;
@@ -150,14 +131,53 @@ namespace Leadtools_Issue
 
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
-			Color color = new Color
+			var writer = new DocumentWriter();
+			var pdfOptions = (PdfDocumentOptions)writer.GetOptions(DocumentFormat.Pdf);
+			SetPdfOptions(pdfOptions);
+			writer.SetOptions(DocumentFormat.Pdf, pdfOptions);
+
+			IOcrEngine engine = OcrEngineManager.CreateEngine(OcrEngineType.Advantage, IntPtr.Size > 4);
+			engine.Startup(null, writer, null, "OCREngine");
+			IOcrDocument doc = engine.DocumentManager.CreateDocument();
+			var outputFile = $".\\{Guid.NewGuid()}.pdf";
+			try
 			{
-				A = 255,
-				R = 0,
-				G = 0,
-				B = 255	
-			};
-			AnnotatedCanvas.Annotate(new SolidColorBrush(color));
+				using (var image = LoadImage("test.tif"))
+				{
+					doc.Pages.AddPages(image, 1, image.PageCount, null);
+				}
+
+				doc.Pages.Recognize(null);
+				doc.Save(outputFile, DocumentFormat.Pdf, null);
+			}
+			catch (OcrException)
+			{
+				MessageBox.Show(this, "OCR Engine failure", "OCR Error", MessageBoxButton.OK, MessageBoxImage.Error);
+			}
+			finally
+			{
+				doc.Dispose();
+				engine.Shutdown();
+				engine.Dispose();
+				Process.Start(outputFile);
+			}
+		}
+
+		private static void SetPdfOptions(PdfDocumentOptions pdfOptions)
+		{
+			pdfOptions.DocumentType = PdfDocumentType.Pdf;
+			pdfOptions.FontEmbedMode = DocumentFontEmbedMode.Auto;
+			pdfOptions.ImageOverText = true;
+			pdfOptions.HighQualityPrintEnabled = true;
+			pdfOptions.AutoBookmarksEnabled = true;
+			pdfOptions.QualityFactor = 10; // unused because we are going with G4/LZW
+			pdfOptions.AnnotationsEnabled = true;
+			pdfOptions.AssemblyEnabled = true;
+			pdfOptions.OneBitImageCompression = OneBitImageCompressionType.FaxG4;
+			pdfOptions.ColoredImageCompression = ColoredImageCompressionType.Lzw;
+			pdfOptions.CopyEnabled = true;
+			pdfOptions.EditEnabled = true;
+			pdfOptions.PrintEnabled = true;
 		}
 	}
 }

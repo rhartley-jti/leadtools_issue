@@ -39,10 +39,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Leadtools\Leadtools.dll</HintPath>
     </Reference>
-    <Reference Include="Leadtools.Annotations, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Leadtools\Leadtools.Annotations.dll</HintPath>
-    </Reference>
     <Reference Include="Leadtools.Codecs, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Leadtools\Leadtools.Codecs.dll</HintPath>
@@ -51,69 +47,38 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Leadtools\Leadtools.Codecs.Bmp.dll</HintPath>
     </Reference>
-    <Reference Include="Leadtools.Codecs.Cmp, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Leadtools\Leadtools.Codecs.Cmp.dll</HintPath>
-    </Reference>
-    <Reference Include="Leadtools.Codecs.Fax, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Leadtools\Leadtools.Codecs.Fax.dll</HintPath>
-    </Reference>
-    <Reference Include="Leadtools.Codecs.Gif, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Leadtools\Leadtools.Codecs.Gif.dll</HintPath>
-    </Reference>
-    <Reference Include="Leadtools.Codecs.Jb2, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Leadtools\Leadtools.Codecs.Jb2.dll</HintPath>
-    </Reference>
-    <Reference Include="Leadtools.Codecs.Jbg, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Leadtools\Leadtools.Codecs.Jbg.dll</HintPath>
-    </Reference>
-    <Reference Include="Leadtools.Codecs.Png, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Leadtools\Leadtools.Codecs.Png.dll</HintPath>
-    </Reference>
-    <Reference Include="Leadtools.Codecs.Raw, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Leadtools\Leadtools.Codecs.Raw.dll</HintPath>
-    </Reference>
     <Reference Include="Leadtools.Codecs.Tif, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Leadtools\Leadtools.Codecs.Tif.dll</HintPath>
     </Reference>
-    <Reference Include="Leadtools.ColorConversion, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+    <Reference Include="Leadtools.Forms, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Leadtools\Leadtools.ColorConversion.dll</HintPath>
+      <HintPath>Leadtools\Leadtools.Forms.dll</HintPath>
     </Reference>
-    <Reference Include="Leadtools.Drawing, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+    <Reference Include="Leadtools.Forms.DocumentWriters, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Leadtools\Leadtools.Drawing.dll</HintPath>
+      <HintPath>Leadtools\Leadtools.Forms.DocumentWriters.dll</HintPath>
     </Reference>
-    <Reference Include="Leadtools.Kernel.Annotations, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+    <Reference Include="Leadtools.Forms.Ocr, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Leadtools\Leadtools.Kernel.Annotations.dll</HintPath>
+      <HintPath>Leadtools\Leadtools.Forms.Ocr.dll</HintPath>
     </Reference>
-    <Reference Include="Leadtools.Pdf, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Leadtools\Leadtools.Pdf.dll</HintPath>
+    <Reference Include="Leadtools.Forms.Ocr.Advantage">
+      <HintPath>Leadtools\Leadtools.Forms.Ocr.Advantage.dll</HintPath>
     </Reference>
-    <Reference Include="Leadtools.Windows.Annotations, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Leadtools\Leadtools.Windows.Annotations.dll</HintPath>
+    <Reference Include="Leadtools.ImageProcessing.Color">
+      <HintPath>Leadtools\Leadtools.ImageProcessing.Color.dll</HintPath>
     </Reference>
-    <Reference Include="Leadtools.Windows.Controls, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=MSIL">
+    <Reference Include="Leadtools.ImageProcessing.Core, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Leadtools\Leadtools.Windows.Controls.dll</HintPath>
+      <HintPath>Leadtools\Leadtools.ImageProcessing.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Leadtools.Windows.Media, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Leadtools\Leadtools.Windows.Media.dll</HintPath>
+    <Reference Include="Leadtools.ImageProcessing.Utilities">
+      <HintPath>Leadtools\Leadtools.ImageProcessing.Utilities.dll</HintPath>
     </Reference>
-    <Reference Include="Leadtools.Windows.Media.TransitionBase, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=MSIL">
+    <Reference Include="Leadtools.Svg, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Leadtools\Leadtools.Windows.Media.TransitionBase.dll</HintPath>
+      <HintPath>Leadtools\Leadtools.Svg.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -141,7 +106,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="AnnotatedCanvas.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -165,12 +129,30 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Content Include="Leadtools\Leadtools.Forms.dll" />
+    <Content Include="Leadtools\Leadtools.Forms.Ocr.Advantage.dll" />
+    <Content Include="Leadtools\Leadtools.ImageProcessing.Color.dll" />
+    <Content Include="Leadtools\Leadtools.ImageProcessing.Core.dll" />
+    <Content Include="Leadtools\Leadtools.ImageProcessing.Utilities.dll" />
+    <Content Include="Leadtools\Leadtools.Svg.dll" />
+    <Content Include="test.tif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="License\LEADTOOLS.LIC.KEY" />
     <EmbeddedResource Include="License\LEADTOOLS.LIC" />
+    <Content Include="OCREngine\Advantage.en.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OCREngine\Advantage.en.bin2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OCREngine\Advantage.en.dic">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -182,44 +164,48 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Leadtools\Leadtools.Annotations.dll" />
-    <Content Include="Leadtools\Leadtools.Barcode.dll" />
-    <Content Include="Leadtools\Leadtools.Barcode.OneD.dll" />
     <Content Include="Leadtools\Leadtools.Codecs.Bmp.dll" />
-    <Content Include="Leadtools\Leadtools.Codecs.Cmp.dll" />
     <Content Include="Leadtools\Leadtools.Codecs.dll" />
-    <Content Include="Leadtools\Leadtools.Codecs.Fax.dll" />
-    <Content Include="Leadtools\Leadtools.Codecs.Gif.dll" />
-    <Content Include="Leadtools\Leadtools.Codecs.Jb2.dll" />
-    <Content Include="Leadtools\Leadtools.Codecs.Jbg.dll" />
-    <Content Include="Leadtools\Leadtools.Codecs.Png.dll" />
-    <Content Include="Leadtools\Leadtools.Codecs.Raw.dll" />
     <Content Include="Leadtools\Leadtools.Codecs.Tif.dll" />
-    <Content Include="Leadtools\Leadtools.ColorConversion.dll" />
     <Content Include="Leadtools\Leadtools.dll" />
-    <Content Include="Leadtools\Leadtools.Drawing.dll" />
-    <Content Include="Leadtools\Leadtools.Forms.dll" />
     <Content Include="Leadtools\Leadtools.Forms.DocumentWriters.dll" />
     <Content Include="Leadtools\Leadtools.Forms.Ocr.dll" />
-    <Content Include="Leadtools\Leadtools.Forms.Ocr.Plus.dll" />
-    <Content Include="Leadtools\Leadtools.ImageProcessing.Color.dll" />
-    <Content Include="Leadtools\Leadtools.ImageProcessing.Core.dll" />
-    <Content Include="Leadtools\Leadtools.ImageProcessing.Effects.dll" />
-    <Content Include="Leadtools\Leadtools.ImageProcessing.SpecialEffects.dll" />
-    <Content Include="Leadtools\Leadtools.ImageProcessing.Utilities.dll" />
-    <Content Include="Leadtools\Leadtools.Kernel.Annotations.dll" />
-    <Content Include="Leadtools\Leadtools.Mrc.dll" />
-    <Content Include="Leadtools\Leadtools.Pdf.dll" />
-    <Content Include="Leadtools\Leadtools.PdfCompressor.dll" />
-    <Content Include="Leadtools\Leadtools.PdfEngine.dll" />
-    <Content Include="Leadtools\Leadtools.Twain.dll" />
-    <Content Include="Leadtools\Leadtools.Wia.dll" />
-    <Content Include="Leadtools\Leadtools.Windows.Annotations.dll" />
-    <Content Include="Leadtools\Leadtools.Windows.Controls.dll" />
-    <Content Include="Leadtools\Leadtools.Windows.Media.dll" />
-    <Content Include="Leadtools\Leadtools.Windows.Media.TransitionBase.dll" />
-    <Content Include="Leadtools\Leadtools.WinForms.CommonDialogs.File.dll" />
-    <Content Include="Leadtools\Leadtools.WinForms.dll" />
+    <Content Include="OCREngine\atl100.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OCREngine\Lfbmpu.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OCREngine\Lfcmpu.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OCREngine\Lfrawu.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OCREngine\Lftifu.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OCREngine\Ltdocthunkaru.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OCREngine\Ltfilu.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OCREngine\Ltkrnu.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OCREngine\Ltthunkserver.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OCREngine\Ltthunkutlu.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OCREngine\Lttwnthunku.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OCREngine\Lttwnu.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

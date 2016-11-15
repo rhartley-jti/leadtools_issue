@@ -7,30 +7,11 @@
 		mc:Ignorable="d"
 		Title="MainWindow"
 		Height="350"
-		Width="525"
-		Loaded="Window_Loaded">
-	<DockPanel Name="Root">
-		<Button DockPanel.Dock="Bottom"
-				Click="Button_Click">Annotate</Button>
-		<ScrollViewer Name="Viewer"
-					  HorizontalContentAlignment="Center"
-					  VerticalContentAlignment="Center"
-					  HorizontalScrollBarVisibility="Auto"
-					  VerticalScrollBarVisibility="Auto"
-					  Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}">
-			<local:AnnotatedCanvas Focusable="False"
-													 x:Name="AnnotatedCanvas"
-													 Background="White"
-													 HorizontalAlignment="Center"
-													 VerticalAlignment="Top">
-				<Canvas.LayoutTransform>
-					<ScaleTransform x:Name="mainCanvScale" />
-				</Canvas.LayoutTransform>
-				<Image Name="mainImg"
-					   Stretch="None"
-					   Focusable="False"
-					   RenderOptions.BitmapScalingMode="HighQuality" />
-			</local:AnnotatedCanvas>
-		</ScrollViewer>
-	</DockPanel>
+		Width="525">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"></RowDefinition>
+		</Grid.RowDefinitions>
+		<Button Padding="15" Grid.Row="0" Click="Button_Click">Press Me</Button>
+	</Grid>
 </Window>
