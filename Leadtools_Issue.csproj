@@ -9,14 +9,15 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Leadtools_Issue</RootNamespace>
     <AssemblyName>Leadtools_Issue</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -47,9 +48,34 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Leadtools\Leadtools.Codecs.Bmp.dll</HintPath>
     </Reference>
+    <Reference Include="Leadtools.Codecs.Cmp">
+      <HintPath>Leadtools\Leadtools.Codecs.Cmp.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Fax">
+      <HintPath>Leadtools\Leadtools.Codecs.Fax.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Gif">
+      <HintPath>Leadtools\Leadtools.Codecs.Gif.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Jb2">
+      <HintPath>Leadtools\Leadtools.Codecs.Jb2.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Jbg">
+      <HintPath>Leadtools\Leadtools.Codecs.Jbg.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Png">
+      <HintPath>Leadtools\Leadtools.Codecs.Png.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Raw">
+      <HintPath>Leadtools\Leadtools.Codecs.Raw.dll</HintPath>
+    </Reference>
     <Reference Include="Leadtools.Codecs.Tif, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Leadtools\Leadtools.Codecs.Tif.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Drawing, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Leadtools\Leadtools.Drawing.dll</HintPath>
     </Reference>
     <Reference Include="Leadtools.Forms, Version=19.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -129,6 +155,14 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Content Include="Leadtools\Leadtools.Codecs.Cmp.dll" />
+    <Content Include="Leadtools\Leadtools.Codecs.Fax.dll" />
+    <Content Include="Leadtools\Leadtools.Codecs.Gif.dll" />
+    <Content Include="Leadtools\Leadtools.Codecs.Jb2.dll" />
+    <Content Include="Leadtools\Leadtools.Codecs.Jbg.dll" />
+    <Content Include="Leadtools\Leadtools.Codecs.Png.dll" />
+    <Content Include="Leadtools\Leadtools.Codecs.Raw.dll" />
+    <Content Include="Leadtools\Leadtools.Drawing.dll" />
     <Content Include="Leadtools\Leadtools.Forms.dll" />
     <Content Include="Leadtools\Leadtools.Forms.Ocr.Advantage.dll" />
     <Content Include="Leadtools\Leadtools.ImageProcessing.Color.dll" />

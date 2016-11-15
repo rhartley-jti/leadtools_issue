@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using System.Windows;
 using Leadtools;
 using Leadtools.Codecs;
@@ -170,7 +171,7 @@ namespace Leadtools_Issue
 			pdfOptions.ImageOverText = true;
 			pdfOptions.HighQualityPrintEnabled = true;
 			pdfOptions.AutoBookmarksEnabled = true;
-			pdfOptions.QualityFactor = 10; // unused because we are going with G4/LZW
+			pdfOptions.QualityFactor = 10;
 			pdfOptions.AnnotationsEnabled = true;
 			pdfOptions.AssemblyEnabled = true;
 			pdfOptions.OneBitImageCompression = OneBitImageCompressionType.FaxG4;
@@ -178,6 +179,20 @@ namespace Leadtools_Issue
 			pdfOptions.CopyEnabled = true;
 			pdfOptions.EditEnabled = true;
 			pdfOptions.PrintEnabled = true;
+		}
+
+		private void MainWindow_OnClosed(object sender, EventArgs e)
+		{
+			DirectoryInfo di = new DirectoryInfo(".");
+			FileInfo[] files = di.GetFiles("*.pdf")
+													 .Where(p => p.Extension == ".pdf").ToArray();
+			foreach (FileInfo file in files)
+				try
+				{
+					file.Attributes = FileAttributes.Normal;
+					File.Delete(file.FullName);
+				}
+				catch { }
 		}
 	}
 }
